@@ -9,6 +9,7 @@ document.getElementById("add-money-btn").addEventListener("click",function(event
     if(pinNumber === "51419"){
         console.log("added money");
         const balance = document.getElementById("account-balance").innerText;
+        
         const addNumber = parseFloat(addMoney);
         const balanceNumber = parseFloat(balance);
         const updateMoney = balanceNumber + addNumber;
@@ -17,7 +18,7 @@ document.getElementById("add-money-btn").addEventListener("click",function(event
 
         
     }else{
-        console.log("wrong pin")
+        alert("wrong pin")
     }
 
 })
